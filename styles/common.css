@@ -1,0 +1,89 @@
+.btn{
+    display: inline-block;
+    color: var(--white);
+    border-radius: .5rem;
+    transition: all ease-in-out .2s;
+
+}
+.btn.btn-white{
+    background-color: var(--white);
+    color: var(--dark);
+}
+.btn.btn-white:hover{
+    color: var(--white);
+    background-color: var(--dark);
+}
+.btn.btn-orange{
+    background-color: var(--orange);
+    color: var(--white);
+}
+.btn.btn-orange:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+.btn.btn-blue{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.btn.btn-blue:hover{
+    background-color: var(--white);
+    color: var(--blue);
+}
+.btn.btn-purple{
+    background-color: var(--purple);
+    color: var(--white);
+}
+.btn.btn-purple:hover{
+    background-color: var(--white);
+    color: var(--purple);
+}
+.btn.action-btn{
+    padding: .42rem .893rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+.flex-item{
+    display: flex;
+}
+.flex-justify-space-between{
+    justify-content: space-between;
+}
+.flex-align-items-center{
+    align-items: center;
+}
+.gap-half{
+    gap:.5rem;
+}
+.gap-1{
+    gap:1rem
+}
+img{
+    max-width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.light-pink{
+    background-color: var(--light-pink);
+}
+.light-pink-text{
+    color: var(--pink);
+}
+.light-blue{
+    background-color: var(--light-blue);
+}
+.light-blue-text{
+    color: var(--blue);
+}
+.light-purple{
+    background-color: var(--light-purple);
+}
+.light-purple-text{
+    color: var(--purple);
+}
+.light-orange{
+    background-color: var(--light-orange);
+}
+.light-orange-text{
+    color: var(--orange);
+}

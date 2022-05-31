@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/fav.ico">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/ed8e63257a.js" crossorigin="anonymous"></script>
+    <link href="./styles/datepicker.css" rel="stylesheet" />
+    <script src="./js/datepicker.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <main>
+        <aside>
+            <div id="logo">
+                <a href=""><img src="./assets/images/logo.svg" alt="" width="50"> Academy</a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="./">Dashboard</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Chats</a></li>
+                    <li><a href="#">Grades</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+            <div id="premium-box">
+                <img src="./assets/images/computer.png" width="180" alt="">
+                <h6>Premium subcribtion</h6>
+                <p>Buy premium and get access to new courses</p>
+                <a href="" class="btn btn-purple">More Details</a>
+            </div>
+        </aside>
+        <div class="wrapper">
+            <section id="main-content">
+                <div id="main-content-header" class="flex-item flex-justify-space-between">
+                    <div id="right-content">
+                        <h2>Dashboard</h2>
+                    </div>
+                    <div id="left-content" class="flex-item flex-justify-space-between gap-1">
+                        <div id="search">
+                            <form action="">
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Search">
+                                </div>
+                            </form>
+                        </div>
+                        <div id="notification">
+                            <button class="btn action-btn btn-white"><i class="fa-solid fa-bell"></i><span></span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- new Courses -->
+                <div id="new-courses">
+                    <h3>New Courses</h3>
+                    <div class="courses flex-item flex-justify-space-between gap-1">
+                        <div class="course-box">
+                            <div class="wrapper-image">
+                                <img src="./assets/images/course1.png" alt="">
+                            </div>
+                            <h4>Geography</h4>
+                            <div class="lessons">
+                                12 Lessons
+                            </div>
+                            <div class="flex-item flex-justify-space-between flex-align-items-center gap-1">
+                                <ul class="avatars">
+                                    <li><img src="./assets/images/u1.png" width="20" alt=""></li>
+                                    <li><img src="./assets/images/u2.png" width="20" alt=""></li>
+                                    <li><img src="./assets/images/u3.png" width="20" alt=""></li>
+                                </ul>
+                                <a href="" class="btn action-btn btn-orange"><i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- box2 -->
+                        <div class="course-box">
+                            <div class="wrapper-image">
+                                <img src="./assets/images/course2.png" alt="">
+                            </div>
+                            <h4>Geography</h4>
+                            <div class="lessons">
+                                15 Lessons
+                            </div>
+                            <div class="flex-item flex-justify-space-between flex-align-items-center gap-1">
+                                <ul class="avatars">
+                                    <li><img src="./assets/images/u1.png" width="20" alt=""></li>
+                                    <li><img src="./assets/images/u2.png" width="20" alt=""></li>
+                                    <li><img src="./assets/images/u3.png" width="20" alt=""></li>
+                                </ul>
+                                <a href="" class="btn action-btn btn-purple"><i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- boox 3 -->
+                        <div class="course-box">
+                            <div class="wrapper-image">
+                                <img src="./assets/images/course3.png" alt="">
+                            </div>
+                            <h4>Geography</h4>
+                            <div class="lessons">
+                                29 Lessons
+                            </div>
+                            <div class="flex-item flex-justify-space-between flex-align-items-center gap-1">
+                                <ul class="avatars">
+                                    <li><img src="./assets/images/u1.png" width="20" alt=""></li>
+                                    <li><img src="./assets/images/u2.png" width="20" alt=""></li>
+                                    <li><img src="./assets/images/u3.png" width="20" alt=""></li>
+                                </ul>
+                                <a href="" class="btn action-btn btn-blue"><i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- New Courses -->
+                <!-- my Courses -->
+                <div id="my-courses">
+                    <div id="my-courses-header" class="flex-item flex-justify-space-between flex-align-items-center">
+                        <h4>My Courses</h4>
+                        <a href="">View All</a>
+                    </div>
+                    <div class="table">
+                        <div class="table-header">Course</div>
+                        <div class="table-header"></div>
+                        <div class="table-header">Start</div>
+                        <div class="table-header">Rate</div>
+                        <div class="table-header">Level</div>
+                      
+                        <!-- Table Row -->
+                        <div class="row">
+                          <div class="table-content course-icon light-purple-text light-purple text-center"><i class="fa-solid fa-crop-simple"></i></div>
+                          <div class="box course-name">
+                              <h6><a href="">Web Design</a></h6>
+                              <div class="lessons-count">6 Lessons</div>
+                          </div>
+                          <div class="box">May 12</div>
+                          <div class="box">4.8</div>
+                          <div class="box">Elementary</div>
+                        </div>
+                      
+                        <!-- Table Row -->
+                        <div class="row">
+                            <div class="table-content course-icon light-blue-text light-blue text-center"><i class="fa-solid fa-code"></i></div>
+                          <div class="box course-name">
+                              <h6><a href="">Development Basics</a></h6>
+                              <div class="lessons-count">8 Lessons</div>
+                          </div>
+                          <div class="box">May 14</div>
+                          <div class="box">4.4</div>
+                          <div class="box">Intermediate</div>
+                        </div>
+                        <!-- Table Row -->
+                        <div class="row">
+                            <div class="table-content course-icon light-pink-text light-pink text-center"><i class="fa-brands fa-python"></i></div>
+                          <div class="box course-name">
+                              <h6><a href="">Data With Python</a></h6>
+                              <div class="lessons-count">5 Lessons</div>
+                          </div>
+                          <div class="box">May 17</div>
+                          <div class="box">4.6</div>
+                          <div class="box">Intermediate</div>
+                        </div>
+                        <!-- Table Row -->
+                        <div class="row">
+                            <div class="table-content course-icon light-purple-text light-purple text-center"><i class="fa-brands fa-html5"></i></div>
+                          <div class="box course-name">
+                              <h6><a href="">HTML Basics</a></h6>
+                              <div class="lessons-count">5 Lessons</div>
+                          </div>
+                          <div class="box">May 26</div>
+                          <div class="box">4.7</div>
+                          <div class="box">Intermediate</div>
+                        </div>
+                        <!-- Table Row -->
+                        <div class="row">
+                            <div class="table-content course-icon light-orange-text light-orange text-center"><i class="fa-brands fa-js-square"></i></div>
+                          <div class="box course-name">
+                              <h6><a href="">Javascript</a></h6>
+                              <div class="lessons-count">8 Lessons</div>
+                          </div>
+                          <div class="box">May 30</div>
+                          <div class="box">4.9</div>
+                          <div class="box">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- my courses -->
+            </section>
+            <section id="profile">
+                <div id="profile-edit" class="flex-item flex-justify-space-between">
+                    <h2>Profile</h2>
+                    <div id="edit">
+                        <button class="btn action-btn btn-white"><i class="fa-solid fa-pen-to-square"></i></button>
+                    </div>
+                </div>
+                <div id="profile-data">
+                    <div id="profile-image">
+                        <img src="./assets/images/u4.png" width="75" alt="">
+                    </div>
+                    <div id="profile-name">
+                        Esther Howard
+                    </div>
+                    <div id="pfrofile-level">
+                        Elementary
+                    </div>
+                </div>
+                <div id="calandar">
+                    <div id="date-picker"></div>
+                </div>
+                <div id="progress"> 
+                    <h4>Homework Progress</h4>
+                    <ul>
+                        <li class="flex-item flex-justify-space-between flex-align-items-center active">
+                            <div class="progress-bar">
+                                <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--value:50"></div>
+                            </div>
+                            <div class="task">
+                                <h6>Styling with CSS</h6>
+                                <div class="task-count">
+                                    12 tasks
+                                </div>
+                            </div>
+                            <a href=""><i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                        <li class="flex-item flex-justify-space-between flex-align-items-center">
+                            <div class="progress-bar">
+                                <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65"></div>
+                            </div>
+                            <div class="task">
+                                <h6>Styling with CSS</h6>
+                                <div class="task-count">
+                                    12 tasks
+                                </div>
+                            </div>
+                            <a href=""><i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                        <li class="flex-item flex-justify-space-between flex-align-items-center">
+                            <div class="progress-bar">
+                                <div role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="--value:20"></div>
+                            </div>
+                            <div class="task">
+                                <h6>Styling with CSS</h6>
+                                <div class="task-count">
+                                    12 tasks
+                                </div>
+                            </div>
+                            <a href=""><i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

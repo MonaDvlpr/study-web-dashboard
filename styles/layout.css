@@ -1,0 +1,355 @@
+body{
+    font-family: 'lato', 'sans-serif', 'sans';
+    color:var(--dark);
+    background-color: var(--light-gray);
+
+}
+main .wrapper{
+    display: grid;
+    grid-template-columns: 3fr;
+    margin-left: 18rem;
+    margin-right: 18rem;
+}
+#main-content ,aside,#profile{
+    padding:2rem 1rem;
+}
+aside,#profile{
+    height: 100vh;
+    position: fixed;
+}
+#profile{
+    right:0;
+}
+#logo{
+    margin-bottom: 1.5rem;
+}
+#logo a img{
+    display: inline-block;
+    margin-right: .5rem;
+}
+#logo a:hover{
+    color: var(--purple);
+}
+
+#premium-box{
+    background-color: var(--light-purple);
+    padding: 7rem 1rem 1rem;
+    border-radius: .5rem;
+    margin-top: 5rem;
+    text-align: center;
+    position: relative;
+    transition: all ease-in-out 0.2s;
+}
+#premium-box img{
+    position: absolute;
+    transition: all ease-in-out 0.2s;
+    left:50%;
+    top:-2rem;
+    transform: translateX(-50%) translateY(0);
+}
+#premium-box h6{
+    margin-bottom: .5rem;
+}
+#premium-box p{
+    margin-bottom: 1rem;
+    color: var(--paragraph);
+    font-size: 12px;
+}
+#premium-box .btn{
+    padding:.8rem 1.5rem;
+}
+#premium-box:hover{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+#premium-box:hover img{
+    transform: translateX(-50%) translateY(1rem);
+}
+nav ul li{
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+}
+nav ul li a{
+    display: block;
+    color: var(--gray);
+    padding: .5rem 1rem;
+}
+nav ul li:hover a{
+    color: var(--purple);
+}
+nav ul li.active{
+    background-color: var(--light-purple);
+}
+nav ul li.active a{
+    color: var(--dark);
+}
+
+#main-content, #profile h2{
+    line-height: 0.75;
+}
+#notification button{
+    position: relative;
+}
+#notification button span{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 13px;
+    right: 13px;
+    border-radius: 50%;
+    background-color: var(--purple);
+}
+#notification button.btn:hover span{
+    background-color: var(--blue);
+}
+#new-courses h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#new-courses .courses .course-box,#new-courses .courses .course-box .wrapper-image{
+    padding:1.5rem;
+    border-radius: .5rem;
+}
+#new-courses .courses .course-box:first-child .wrapper-image{
+    background-color: var(--orange);
+}
+#new-courses .courses .course-box:first-child{
+    background-color: var(--light-orange);
+}
+#new-courses .courses .course-box:nth-child(2) .wrapper-image{
+    background-color: var(--purple);
+}
+#new-courses .courses .course-box:nth-child(2){
+    background-color: var(--light-purple);
+}
+#new-courses .courses .course-box:last-child .wrapper-image{
+    background-color: var(--blue);
+}
+#new-courses .courses .course-box:last-child{
+    background-color: var(--light-blue);
+}
+#new-courses .courses .course-box .wrapper-image img{
+    display: block;
+    margin: auto;
+}
+#search{
+    position: relative;
+}
+#search {
+    border-radius: 10px;
+}
+#search form{
+    width: 100%;
+}
+#search form > div{
+    background-color: var(--white);
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    color: var(--progress-bar);
+    width: 100%;
+}
+#search form > div i{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.8rem 0.893rem;
+
+}
+#search form> div input{
+    border:none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: all ease-in-out .2s;
+}
+#search form> div input:focus {
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+ul.avatars li{
+    display: inline-block;
+    padding: .5rem;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    transition: all ease-in-out .3s;
+    position: relative;
+}
+ul.avatars li:hover{
+    transform: translateY(-3px);
+}
+ul.avatars li img{
+    margin: auto;
+    display: block;
+}
+
+.course-box{
+    transition: all ease-in-out .2s;
+}
+.course-box:hover{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.course-box h4{
+    margin-top: 1.5rem;
+}
+.course-box .lessons{
+    margin-top: 0.8rem;
+    margin-bottom: 2.5rem;
+    color: var(--paragraph);
+}
+ul.avatars li:first-child{
+    background-color: var(--light-purple);
+}
+ul.avatars li:nth-child(2){
+    background-color: var(--light-blue);
+}
+ul.avatars li:last-child{
+    background-color: var(--light-green);
+}
+ul.avatars li:nth-child(2),ul.avatars li:last-child{
+    margin-left: -0.75rem;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr repeat(3, 1fr);
+    grid-template-rows: auto repeat(5, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+.row {
+    display: contents;
+}
+.row .box{
+    display: flex;
+    align-items: center;
+}
+.row .box.course-name{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.table .table-header {
+  color: var(--gray);
+  font-weight: bold;
+}
+.table-content.course-icon{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 20px;
+}
+#my-courses-header{
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+}
+#my-courses-header a{
+    color: var(--purple);
+}
+#my-courses-header a:hover{
+    color: var(--dark);
+    text-decoration:underline;
+}
+.lessons-count{
+    color: var(--gray);
+    font-size: 13px;
+}
+#profile-data{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#profile-data #profile-name{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#profile-data #pfrofile-level{
+    font-size: .8rem;
+    color: var(--gray);
+}
+#profile-data #profile-image{
+    width: 75px;
+    height:75px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--light-purple);
+    overflow: hidden;
+}
+#progress h4{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+#progress ul li{
+    background-color: var(--white);
+    padding:.3rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+#progress ul li h6{
+    font-size: 0.8rem;
+}
+#progress ul li .task-count{
+    font-size: 0.7rem;
+}
+#progress ul li.active{
+    background-color: var(--purple);
+    color: var(--white);
+}
+#progress ul li.active a:hover{
+    color:var(--white);
+}
+#progress ul li .progress-bar div[role="progressbar"] {
+    --size: 3.1rem;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--purple) calc(var(--pgPercentage) * 1%), var(--progress-bar) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    font-weight: bold;
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+#progress ul li.active .progress-bar div[role="progressbar"] {
+    background: 
+      radial-gradient(closest-side, var(--purple) 80%, transparent 0 99.9%, var(--purple) 0),
+      conic-gradient(var(--white) calc(var(--pgPercentage) * 1%), var(--light-purple) 0)
+      ;
+}
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+@media only screen and (min-width: 1200px) {
+    #profile{
+        width: 255px;
+    }
+    #profile #profile-data #profile-image{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
